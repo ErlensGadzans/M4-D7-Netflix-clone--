@@ -7,6 +7,7 @@ import ModalForm from "./components/Modal"
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import ShowDetails from "./components/ShowDetails"
 import OnlyMovies from "./components/OnlyMovies"
+import Registration from "./components/Registration"
 import {FormControl, Button, Form, Nav, Container, CommentArea} from "react-bootstrap"
 
 
@@ -16,6 +17,7 @@ function App() {
    <Router>
       <Navbar title="Netflix" />
       <Route path="/" exact component={MovieList} />
+      <Route path="/register" exact component={Registration} />
       <Route path="/onlymovies" exact component={OnlyMovies}/>
       <Route
             path="/details/:id"
