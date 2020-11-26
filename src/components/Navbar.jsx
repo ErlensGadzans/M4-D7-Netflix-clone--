@@ -15,16 +15,15 @@ const NavBar = (props) => {
           </Navbar.Brand>
           </Link>
         <Nav className="mr-auto">
-        <Link to="/register">
-          <div className={props.location.pathname === "/register" ? "nav-link" : ""} > Registration </div>
-          </Link>
+        <Nav.Link className="navLink" href="#tvShows">Tv Shows</Nav.Link>
           <Link to="/onlymovies">
-          <div className={props.location.pathname === "/onlymovies" ? "nav-link" : "", "ml-3"}> Only Movies </div>
+          <div className="nav-link" to="/onlymovies" style={{ color: "white" }}> Only Movies </div>
           </Link>
-          
-          
           <Nav.Link className="navLink" href="#recentlyAdded">Recently Added</Nav.Link>
           <Nav.Link className="navLink" href="#myList">My List</Nav.Link>
+          <Link to="/register">
+          <div className={props.location.pathname === "/register" ? "nav-link" : ""} >  <Button variant="danger">Register</Button>{''}  </div>
+          </Link>
         </Nav>
         <Form inline>
          

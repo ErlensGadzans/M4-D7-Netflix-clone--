@@ -8,12 +8,13 @@ class Registration extends React.Component {
       surname: "",
       email: "",
       password: "",
-      dob: 2000,
+      dob: "",
       address: "",
       city: "",
       postcode: "",
     },
   };
+  
 
   updateRegisterField = (e) => {
     let form = { ...this.state.form };
@@ -108,7 +109,7 @@ class Registration extends React.Component {
                 type="number"
                 name="dob"
                 id="dob"
-                placeholder="1995"
+                placeholder="1910"
                 min="1910"
                 max="2020"
                 required
