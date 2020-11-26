@@ -7,6 +7,7 @@ import ModalForm from "./components/Modal"
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import ShowDetails from "./components/ShowDetails"
 import OnlyMovies from "./components/OnlyMovies"
+import {FormControl, Button, Form, Nav, Container, CommentArea} from "react-bootstrap"
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             render={(props) => (
               <Container className="px-5 mt-5">
                 <ShowDetails {...props} />
-                <CommentArea {...props} />
+                {/* <CommentArea {...props} /> */}
               </Container>
             )}
           />

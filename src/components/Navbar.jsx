@@ -15,10 +15,14 @@ const NavBar = (props) => {
           </Navbar.Brand>
           </Link>
         <Nav className="mr-auto">
-          <Nav.Link className="navLink" href="#tvShows"> Tv Shows</Nav.Link>
-          <Link to="/onlymovies">
-          <div className={props.location.pathname === "/onlymovies" ? "nav-link" : ""}> Only Movies </div>
+        <Link to="/register">
+          <div className={props.location.pathname === "/register" ? "nav-link" : ""} > Registration </div>
           </Link>
+          <Link to="/onlymovies">
+          <div className={props.location.pathname === "/onlymovies" ? "nav-link" : "", "ml-3"}> Only Movies </div>
+          </Link>
+          
+          
           <Nav.Link className="navLink" href="#recentlyAdded">Recently Added</Nav.Link>
           <Nav.Link className="navLink" href="#myList">My List</Nav.Link>
         </Nav>
